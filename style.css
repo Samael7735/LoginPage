@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+main.mainLogin{
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .left{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#img{
+  width: 35vw;
+}
+.left h1{
+  color: #77ffc0;
+  font-size: 3vw;
+}
+main .right{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardLogin{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 35px;
+  background-color: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056 ;
+}
+.cardLogin h1{
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+}
+.textField{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0px;
+}
+.textField input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 16px;
+  outline: none;
+}
+.textField label{
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+.textField input::placeholder{
+  color: #f0ffff94;
+}
+.btnLogin{
+  width: 100%;
+  padding: 16px 0px;
+  border: none;
+  border-radius: 10px;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+.btn{
+  margin-top: 20px;
+}
+@media only screen and (max-width: 950px){
+  .cardLogin{
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .mainLogin{
+    flex-direction: column;
+  }
+  .left h1{
+    display: none;
+  }
+  main .left{
+    width: 100%;
+    height: auto;
+  }
+  #img{
+    width: 50vw;
+  }
+  main .right{
+    width: 100%;
+    height: auto;
+  }
+  .cardLogin{
+    width: 90%;
+  }
+}
+
+
+
